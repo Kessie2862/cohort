@@ -1,0 +1,18 @@
+{% extends "layout.html" %} {% block content %}
+<nav class="navbar">
+  <div class="brand-title">My Flask-Website</div>
+  <a href="#" class="toggle-button">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </a>
+  <div class="navbar-links">
+    <ul>
+      <li><a href="{{ url_for('index') }}">Home</a></li>
+      <li><a href="{{ url_for('course') }}">Courses</a></li>
+      <li><a href="{{ url_for('login') }}">Login</a></li>
+      <li><a href="{{ url_for('register') }}">Register</a></li>
+    </ul>
+  </div>
+</nav>
+{% endblock %}
